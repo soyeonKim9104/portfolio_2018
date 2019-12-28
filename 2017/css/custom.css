@@ -1,0 +1,1828 @@
+/*============================== layout_common ==============================*/
+body {
+background: #ffffff;
+}
+
+/*top and end css start*/
+#TOP_button {
+position: fixed;
+text-align: center;
+color: #fff;
+font-weight: bold;
+font-size: 0;
+bottom: 14%;
+right: 3%;
+line-height: 32px;
+width: 40px;
+height: 40px;
+z-index: 99;
+border: 1px solid #000;
+display: none;
+}
+
+#TOP_button img {
+width: 90%;
+padding-top: 4%;
+}
+
+#END_button {
+position: fixed;
+text-align: center;
+color: #fff;
+font-weight: bold;
+font-size: 0;
+bottom: 6%;
+right: 3%;
+line-height: 32px;
+width: 40px;
+height: 40px;
+z-index: 99;
+border: 1px solid #000;
+display: none;
+}
+
+#END_button img {
+width: 90%;
+padding-top: 4%;
+}
+
+/*top and end css end*/
+/*============================== header common ==============================*/
+/*============================== contents(main) common ==============================*/
+/*typing_txt start*/
+.text-js, .text-js_se {
+opacity: 0;
+}
+
+.cursor {
+display: block;
+position: absolute;
+height: 100%;
+top: 0;
+right: -5px;
+width: 2px;
+/* Change colour of Cursor Here */
+background-color: white;
+z-index: 1;
+animation: flash 0.5s none infinite alternate;
+}
+
+@keyframes flash {
+0% {
+opacity: 1;
+}
+
+100% {
+opacity: 0;
+}
+}
+
+/*typing_txt end*/
+.main_intro .text-js {
+font-weight: normal;
+}
+
+.main_intro .text-js_se {
+font-weight: 700;
+}
+
+/*============================== footer common ==============================*/
+/*============================== mobile resize start 17.04.21 ==============================*/
+@media screen and (min-width: 320px) {
+#header {
+width: 100%;
+margin: 0 auto;
+text-align: center;
+}
+
+#header .top_fix_display_pc {
+display: none;
+}
+
+#header .top_fix_display_mobile {
+background: #fff;
+width: 100%;
+top: 0;
+left: 0;
+display: block;
+position: relative;
+/* border-bottom: 1px solid #ddd; */
+}
+
+/*mobile_hamSyle css start*/
+.burger-align {
+/* width: 25px; */
+display: flex;
+justify-content: center;
+align-items: center;
+align-content: center;
+position: absolute;
+top: 38px;
+right: 17px;
+/* height: 25px; */
+}
+
+#simply-burger {
+width: 25px;
+height: 25px;
+transform: rotate(0deg);
+transition: .50s ease-in-out;
+cursor: pointer;
+line-height: 25px;
+}
+
+#simply-burger span {
+display: block;
+position: absolute;
+height: 2px;
+width: 100%;
+opacity: 1;
+left: 0;
+transform: rotate(0deg);
+transition: .25s ease-in-out;
+background: #000;
+}
+
+#simply-burger span:nth-child(1) {
+top: 0px;
+}
+
+#simply-burger span:nth-child(2) {
+top: 9px;
+}
+
+#simply-burger span:nth-child(3) {
+top: 18px;
+}
+
+#simply-burger.open span:nth-child(1) {
+top: 10px;
+transform: rotate(135deg);
+}
+
+#simply-burger.open span:nth-child(2) {
+opacity: 0;
+left: -60px;
+}
+
+#simply-burger.open span:nth-child(3) {
+top: 10px;
+transform: rotate(-135deg);
+}
+
+/*mobile_hamSyle css end*/
+#header .top_fix_display_mobile ul #logo {
+display: inline-block;
+float: left;
+}
+
+#header .top_fix_display_mobile ul #logo a {
+width: 100px;
+display: block;
+padding: 0;
+height: auto;
+}
+
+#header .top_fix_display_mobile ul #logo a img {
+width: 100%;
+}
+
+/*main_display*/
+#main {
+clear: both;
+}
+
+.KSY_main {
+width: 100%;
+height: auto;
+position: relative;
+overflow: hidden;
+margin: 15px auto 0;
+}
+
+.main_img {
+position: relative;
+height: auto;
+width: 100%;
+float: right;
+margin-right: 0;
+}
+
+.main_img img {
+width: 100%;
+opacity: 0.6;
+}
+
+.main_intro {
+position: absolute;
+top: 47px;
+left: 4%;
+display: block;
+width: 89%;
+}
+
+.main_intro .type-js_se {
+margin-top: 15px;
+}
+
+.main_intro .text-js {
+font-size: 1.7em;
+font-family: 'Nanum Gothic', sans-serif;
+}
+
+.main_intro .text-js_se {
+font-size: 1.7em;
+font-family: 'Nanum Gothic', sans-serif;
+line-height: 1.3em;
+}
+
+.KSY_name {
+clear: both;
+position: relative;
+margin: 50px auto 15px;
+text-align: center;
+display: block;
+width: 100%;
+}
+
+.KSY_name h1 {
+font-size: 18px;
+font-weight: normal;
+}
+
+.KSY_name h1 b {
+font-weight: 400;
+font-family: 'Montserrat Alternates', sans-serif;
+margin-left: 0.2em;
+}
+
+.KSY_name h1 .blue {
+color: #0068b7;
+font-size: 1.5em;
+}
+
+.KSY_name h1 .border {
+display: block;
+text-align: center;
+width: 1.8em;
+height: 0.15em;
+background: #0068b7;
+position: relative;
+margin: 0.8em auto 0.2em;
+}
+
+.profile {
+position: relative;
+width: 100%;
+overflow: hidden;
+margin: 0 auto;
+clear: both;
+}
+
+.profile .left {
+width: 100%;
+float: initial;
+display: block;
+height: auto;
+font-size: 0px;
+text-align: center;
+margin: 15px 0 0 0;
+}
+
+.profile .left img {
+width: 90%;
+margin: 0 auto;
+text-align: center;
+}
+
+.profile .right_profile {
+width: 100%;
+float: initial;
+display: block;
+font-size: 0;
+padding: 0;
+text-align: center;
+margin: 18px 0 0 0;
+}
+
+.profile .right_profile b {
+font-size: 20px;
+color: #000;
+text-align: center;
+font-family: 'Montserrat Alternates', sans-serif;
+font-weight: 300;
+margin-bottom: 6px;
+display: block;
+}
+
+.profile .right_profile span {
+font-size: 12px;
+color: #000;
+display: block;
+}
+
+.profile .right_profile span.border {
+display: block;
+text-align: center;
+width: 2.9em;
+height: 0.25em;
+background: #000;
+position: relative;
+margin: 14px auto 0;
+}
+
+.profile .right_profile .info_txt {
+font-size: 14px;
+color: #000;
+line-height: 28px;
+padding: 23px 25px 0px;
+}
+
+.profile .right_profile .info_txt a {
+display: block;
+font-size: 14px;
+width: 170px;
+text-align: center;
+height: 35px;
+line-height: 35px;
+color: #fff;
+margin: 15px auto 20px;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0068b7+1,4fbfc9+100 */
+font-weight: bold;
+background: #0068b7;
+/* Old browsers */
+background: -moz-linear-gradient(-45deg, #0068b7 1%, #4fbfc9 100%);
+/* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, #0068b7 1%,#4fbfc9 100%);
+/* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, #0068b7 1%,#4fbfc9 100%);
+/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0068b7', endColorstr='#4fbfc9',GradientType=1 );
+/* IE6-9 fallback on horizontal gradient */
+}
+
+#KSY_sk_display {
+position: relative;
+width: 100%;
+margin: 0 auto;
+}
+
+#KSY_wk_display {
+position: relative;
+width: 100%;
+margin: 0 auto;
+}
+
+.KSY_skill {
+position: relative;
+margin: 50px auto 15px;
+text-align: center;
+display: block;
+font-size: 18px;
+font-weight: 300;
+font-family: 'Montserrat', sans-serif;
+}
+
+.KSY_skill span {
+font-family: 'Montserrat', sans-serif;
+font-weight: 400;
+}
+
+.KSY_skill b {
+font-weight: bold;
+color: #0068b7;
+}
+
+.skill_info {
+position: relative;
+width: 100%;
+margin: 0 0 10% 0;
+}
+
+.skill_info ul {
+overflow: hidden;
+}
+
+.skill_info ul li {
+width: 100%;
+float: initial;
+height: auto;
+text-align: center;
+font-weight: normal;
+margin: 0 0 30px 0;
+}
+
+.skill_info ul li img {
+width: 90%;
+display: block;
+margin: 0 auto;
+text-align: center;
+}
+
+.skill_info ul li b {
+display: block;
+font-size: 15px;
+font-weight: normal;
+height: 35px;
+line-height: 35px;
+}
+
+/*skill number jq css start*/
+.skill_info ul li .timer {
+color: #000;
+font-size: 80px;
+font-weight: normal;
+height: auto;
+margin: 13px 0 0 0;
+display: block;
+}
+
+.skill_info ul li:first-child .timer:after {
+content: "%";
+font-size: 55px;
+color: #000;
+font-weight: normal;
+margin-left: 1%;
+}
+
+.skill_info ul li:nth-child(2) .timer:after {
+content: "%";
+font-size: 55px;
+color: #000;
+font-weight: normal;
+margin-left: 1%;
+}
+
+.skill_info ul li:last-child .timer:after {
+content: "%";
+font-size: 55px;
+color: #000;
+font-weight: normal;
+margin-left: 1%;
+}
+
+.place_info {
+position: relative;
+width: 100%;
+margin: 0 0 6% 0;
+}
+
+.place_info ul {
+overflow: hidden;
+padding: 0;
+}
+
+.place_info ul li {
+width: 50%;
+float: left;
+height: 40px;
+text-align: center;
+font-size: 12px;
+position: relative;
+line-height: 40px;
+}
+
+.place_info ul li.active {
+}
+
+.place_info ul .active::after {
+content: "";
+display: block;
+position: absolute;
+width: 45%;
+height: 3px;
+background: #0068b7;
+bottom: 0;
+left: 50%;
+margin-left: -22%;
+}
+
+/*skill number jq css end*/
+/*mobile design swiper css start */
+.sub_one {
+}
+
+.sub_one .skin_display {
+width: 100%;
+height: auto;
+background-image: initial;
+background-repeat: initial;
+background-size: initial;
+background-position: initial;
+padding: 5.5%;
+margin: 0 auto;
+text-align: center;
+}
+
+.sub_one .sub_title {
+position: relative;
+display: block;
+height: auto;
+margin: 0;
+font-weight: normal;
+color: #333;
+font-size: 12px;
+padding: 0px 18px;
+text-align: center;
+line-height: 20px;
+}
+
+.sub_one .sub_title b {
+font-weight: normal;
+font-size: 13px;
+color: #000;
+}
+
+.sub_one .sub_title span {
+font-weight: normal;
+font-size: 13px;
+color: #fff;
+background: #0068b7;
+padding: 7px;
+display: block;
+width: 45%;
+margin: 0 auto 10px;
+}
+
+.sub_one .swiper-container {
+width: 100%;
+height: 100%;
+}
+
+.swiper-slide {
+/* Center slide text vertically */
+display: -webkit-box;
+display: -ms-flexbox;
+display: -webkit-flex;
+display: flex;
+-webkit-box-pack: center;
+-ms-flex-pack: center;
+-webkit-justify-content: center;
+justify-content: center;
+-webkit-box-align: center;
+-ms-flex-align: center;
+-webkit-align-items: center;
+align-items: center;
+}
+
+.sub_one .swiper-slide {
+text-align: center;
+font-size: 18px;
+background: transparent;
+height: auto;
+/* width: 100% !important; */
+/* margin: 5.28% 2.63% 0 0 !important; */
+padding: 0;
+}
+
+.sub_one .swiper-slide a {
+display: block;
+cursor: pointer;
+}
+
+.sub_one .swiper-slide a img {
+width: 100%;
+margin: 0 auto;
+z-index: 99;
+border: 1px solid #d4d4d4;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets {
+bottom: 21px;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+margin: 0 0.25%;
+background: #fff;
+border-radius: 0;
+width: 10px;
+height: 2px;
+}
+
+.swiper-pagination-progress .swiper-pagination-progressbar {
+background: #fff;
+}
+
+/*mobile design swiper css end */
+/*pc design css start */
+.p_display {
+position: relative;
+clear: both;
+margin: 0;
+}
+
+.p_display ul {
+overflow: hidden;
+width: 100%;
+font-size: 0;
+padding: 20px;
+}
+
+.p_display ul li {
+width: 100%;
+float: left;
+text-align: center;
+margin-bottom: 15px;
+position: relative;
+}
+
+.p_display ul li a {
+width: auto;
+display: block;
+}
+
+.p_display ul li a img {
+width: 100%;
+border: 1px solid #eee;
+}
+
+.p_display ul li .info {
+display: none;
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(255, 255, 255, 0.8);
+border: 1px solid #ddd;
+}
+
+.p_display ul li .info .title {
+color: #000;
+font-size: 15px;
+bottom: 34%;
+position: absolute;
+left: 5%;
+text-align: left;
+}
+
+.p_display ul li .info .title b {
+display: block;
+width: 22%;
+height: 2px;
+background: #000;
+margin-top: 5%;
+}
+
+.p_display ul li .info .sub {
+color: #000;
+font-size: 11px;
+bottom: 5%;
+position: absolute;
+left: 5%;
+text-align: left;
+line-height: 15px;
+padding: 0px 15px 0 0;
+}
+
+.p_display ul li .info .sub br {
+display: none;
+}
+
+.p_display ul li .info .title .fake_button {
+display: inline-block;
+padding: 5px 11px;
+font-size: 11px;
+width: auto;
+border: 1px solid #0068b7;
+border-radius: 35px;
+vertical-align: middle;
+margin-left: 4px;
+color: #0068b7;
+font-weight: bold;
+}
+
+/*pc design css end */
+/*footer css start*/
+#footer {
+background: #eee;
+height: auto;
+margin: 10% 0 0 0;
+clear: both;
+}
+
+#footer .foot_display {
+width: 100%;
+margin: 0 auto;
+display: block;
+padding: 1% 1% 0 1%;
+}
+
+#footer .copy_name {
+padding: 0px 15px 20px 15px;
+font-size: 12px;
+font-weight: normal;
+color: #bbb;
+line-height: 16px;
+text-align: left;
+display: block;
+}
+
+#footer .copy_name p {
+display: block;
+font-size: 11px;
+color: #bbb;
+}
+
+#footer .sysy {
+display: block;
+overflow: hidden;
+padding: 20px 15px;
+clear: both;
+}
+
+#footer .sysy .left {
+display: none;
+}
+
+#footer .sysy .left img {
+width: 300px;
+height: 300px;
+}
+
+#footer .sysy .center {
+width: 100%;
+margin: 0;
+font-family: 'Montserrat Alternates', sans-serif;
+font-weight: 500;
+font-size: 32px;
+color: #000;
+}
+
+#footer .sysy .center b {
+font-family: initial;
+color: #0068b7;
+margin-left: 4px;
+}
+
+#footer .sysy .center span {
+display: block;
+width: 38px;
+height: 3px;
+background: #0068b7;
+margin: 15px 0 0 0;
+}
+
+#footer .sysy .center p {
+font-weight: 200;
+font-size: 17px;
+margin: 16px 0 20px;
+color: #666;
+}
+
+#footer .sysy .right {
+}
+
+#footer .sysy .right div {
+width: 100%;
+margin: 0 0 41px 0px;
+}
+
+#footer .sysy .right div span {
+font-family: 'Montserrat Alternates', sans-serif;
+font-weight: 400;
+font-size: 18px;
+line-height: 22px;
+display: inline-block;
+text-align: left;
+float: left;
+width: 30%;
+}
+
+#footer .sysy .right div span b {
+font-family: initial;
+color: #0068b7;
+margin-left: 2px;
+}
+
+#footer .sysy .right div a {
+font-size: 11px;
+display: block;
+color: #353535;
+line-height: 20px;
+}
+
+/*footer css end*/
+#sy_menu {
+width: 35px;
+height: 35px;
+position: absolute;
+top: 18px;
+right: 12px;
+}
+
+#sy_menu img {
+width: 100%;
+}
+
+.show_display {
+display: none;
+z-index: 999;
+background: #fff;
+position: fixed;
+top: 30%;
+left: 50%;
+width: 170px;
+margin-left: -85px;
+border: 3px double #666;
+}
+
+.show_display .close {
+position: absolute;
+width: 27px;
+height: 27px;
+z-index: 1000;
+top: 7px;
+right: 7px;
+}
+
+.show_display .close img {
+width: 100%;
+}
+
+.show_display ul {
+overflow: hidden;
+padding: 21px 0px 13px;
+}
+
+.show_display ul li {
+height: 40px;
+line-height: 40px;
+color: #000;
+}
+
+.show_display ul li.menu {
+height: 40px;
+line-height: 40px;
+color: #0068b7;
+font-family: 'Montserrat Alternates', sans-serif;
+font-weight: bold;
+position: relative;
+margin: 0 0 16px 0;
+}
+
+.show_display ul li.menu span {
+display: block;
+position: absolute;
+width: 30px;
+height: 2px;
+background: #0d70bb;
+left: 50%;
+margin-left: -15px;
+}
+
+.show_display ul li a {
+color: #000;
+font-size: 16px;
+font-weight: 300;
+font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.show_display ul li a b {
+font-weight: bold;
+}
+
+.show_display ul li:last-child a span {
+display: none;
+}
+
+.show_bg {
+width: 100%;
+height: 100%;
+position: fixed;
+top: 0;
+left: 0;
+background: rgba(255, 255, 255, 0.6);
+z-index: 200;
+display: none;
+}
+
+.mobile_ph {
+display: block !important;
+}
+
+.mobile_ph a {
+display: block;
+width: 93%;
+margin: 0 auto;
+}
+
+.mobile_ph a img {
+width: 100%;
+text-align: center;
+}
+
+.pc_ph {
+display: none;
+}
+
+.foot_list {
+clear: both;
+}
+
+.foot_list ul {
+font-size: 0px;
+padding: 10px 4px 0 4px;
+overflow: hidden;
+text-align: center;
+width: 100%;
+}
+
+.foot_list ul li {
+width: 50%;
+height: 35px;
+line-height: 35px;
+float: left;
+text-align: center;
+margin: 0;
+position: relative;
+}
+
+.foot_list ul li span {
+position: absolute;
+right: 0;
+top: 12px;
+width: 1px;
+height: 9px;
+background: #b8b8b8;
+}
+
+.foot_list ul li:nth-child(2) span {
+display: none;
+}
+
+.foot_list ul li a {
+font-size: 10px;
+color: #575757;
+display: block;
+}
+
+.sk_bg {
+display: none;
+}
+
+.sk_bg img {
+width: 100%;
+}
+
+.self_work {
+position: relative;
+width: 100%;
+}
+
+.self_work .KSY_name {
+}
+
+.self_work .self_title {
+text-align: center;
+display: block;
+font-size: 12px;
+padding: 0px 12px;
+line-height: 20px;
+}
+}
+
+/*============================== mobile resize end 17.04.21 ==============================*/
+/*============================== pc resize start 17.04.21 ==============================*/
+@media screen and (min-width: 960px) {
+#TOP_button {
+bottom: 12%;
+}
+
+#header {
+width: 100%;
+margin: 0 auto;
+text-align: center;
+}
+
+#header .top_fix_display_mobile {
+display: none;
+}
+
+#header .top_fix_display_pc {
+position: relative;
+width: 100%;
+height: 160px;
+text-align: center;
+margin: 0 auto;
+background: #fff;
+top: 0;
+left: 0;
+display: block;
+}
+
+#header .top_fix_display_pc ul {
+overflow: hidden;
+font-size: 0px;
+}
+
+#header .top_fix_display_pc ul li {
+display: inline-block;
+vertical-align: middle;
+padding: 0 4% 0 3%;
+width: auto;
+margin: 0 auto;
+text-align: center;
+}
+
+#header .top_fix_display_pc ul li:first-child, #header .top_fix_display_pc ul li:nth-child(2) {
+padding: 0px 4%;
+}
+
+#header .top_fix_display_pc ul li:nth-child(3) {
+padding: 0 3%;
+}
+
+#header .top_fix_display_pc ul #sy_menu {
+display: none;
+}
+
+#header .top_fix_display_pc ul #logo a {
+width: 9em;
+display: block;
+padding: 0;
+}
+
+#header .top_fix_display_pc ul #logo a img {
+width: 100%;
+}
+
+#header .top_fix_display_pc ul li a {
+font-size: 18px;
+color: #000;
+font-weight: 400;
+font-family: 'Montserrat Alternates', sans-serif;
+display: block;
+cursor: pointer;
+}
+
+#header .top_fix_display_pc ul li a b {
+font-family: 'Montserrat Alternates', sans-serif;
+font-weight: 600;
+}
+
+#header .top_fix_display_pc ul li span {
+font-size: 13px;
+font-family: 'Montserrat Alternates', sans-serif;
+padding-left: 10px;
+}
+
+/*main_display*/
+#main {
+clear: both;
+}
+
+.KSY_main {
+width: 1500px;
+height: 800px;
+position: relative;
+margin: 0 auto;
+}
+
+.main_img {
+position: relative;
+height: auto;
+width: 70%;
+float: right;
+margin-right: 2%;
+}
+
+.main_img img {
+width: 100%;
+opacity: 1;
+}
+
+.main_intro {
+position: absolute;
+top: 16%;
+left: 12%;
+display: block;
+}
+
+.main_intro .type-js_se {
+margin-top: 15px;
+}
+
+.main_intro .text-js {
+font-size: 3em;
+font-family: 'Nanum Gothic', sans-serif;
+}
+
+.main_intro .text-js_se {
+font-size: 3em;
+font-family: 'Nanum Gothic', sans-serif;
+}
+
+.KSY_name {
+clear: both;
+position: relative;
+margin: 0 auto 3%;
+text-align: center;
+display: block;
+width: 1200px;
+}
+
+.KSY_name h1 {
+font-size: 24px;
+font-weight: normal;
+}
+
+.KSY_name h1 b {
+font-weight: 400;
+font-family: 'Montserrat Alternates', sans-serif;
+margin-left: 0.2em;
+}
+
+.KSY_name h1 .blue {
+color: #0068b7;
+font-size: 1.5em;
+}
+
+.KSY_name h1 .border {
+display: block;
+text-align: center;
+width: 1.8em;
+height: 0.15em;
+background: #0068b7;
+position: relative;
+margin: 0.8em auto 0.2em;
+}
+
+.profile {
+position: relative;
+width: 1200px;
+overflow: hidden;
+margin: 0 auto;
+clear: both;
+}
+
+.profile .left {
+width: 50%;
+float: left;
+display: inline-block;
+height: auto;
+font-size: 0px;
+text-align: center;
+margin: 0;
+}
+
+.profile .left img {
+width: 75%;
+margin: 0 auto;
+text-align: center;
+}
+
+.profile .right_profile {
+width: 50%;
+float: left;
+display: inline-block;
+font-size: 0;
+padding: 1.6% 1% 0% 0%;
+margin: 0;
+text-align: left;
+}
+
+.profile .right_profile b {
+font-size: 25px;
+color: #000;
+text-align: left;
+font-family: 'Montserrat Alternates', sans-serif;
+font-weight: 300;
+margin: 0;
+display: inline-block;
+}
+
+.profile .right_profile span {
+font-size: 13px;
+color: #000;
+margin-left: 11px;
+display: inline-block;
+}
+
+.profile .right_profile span.border {
+display: block;
+text-align: left;
+width: 2.9em;
+height: 0.25em;
+background: #000;
+position: relative;
+margin: 1em 0 0 0.2em;
+}
+
+.profile .right_profile .info_txt {
+font-size: 17px;
+color: #000;
+line-height: 28px;
+padding: 1em 0 0 0.1em;
+text-align: left;
+}
+
+.profile .right_profile .info_txt a {
+display: block;
+font-size: 14px;
+width: 170px;
+text-align: center;
+height: 35px;
+line-height: 35px;
+color: #fff;
+margin: 1% 0 0 0;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0068b7+1,4fbfc9+100 */
+font-weight: bold;
+background: #0068b7;
+/* Old browsers */
+background: -moz-linear-gradient(-45deg, #0068b7 1%, #4fbfc9 100%);
+/* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, #0068b7 1%,#4fbfc9 100%);
+/* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, #0068b7 1%,#4fbfc9 100%);
+/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0068b7', endColorstr='#4fbfc9',GradientType=1 );
+/* IE6-9 fallback on horizontal gradient */
+}
+
+#KSY_sk_display {
+position: relative;
+width: 1200px;
+margin: 0 auto;
+}
+
+#KSY_wk_display {
+position: relative;
+width: 1200px;
+margin: 0 auto;
+}
+
+.KSY_skill {
+position: relative;
+margin: 10% 0 3% 0;
+text-align: center;
+display: block;
+font-size: 24px;
+font-weight: 300;
+font-family: 'Montserrat', sans-serif;
+}
+
+.KSY_skill span {
+font-family: 'Montserrat', sans-serif;
+font-weight: 400;
+}
+
+.KSY_skill b {
+font-weight: bold;
+color: #0068b7;
+}
+
+.skill_info {
+position: relative;
+width: 100%;
+margin: 0 0 10% 0;
+}
+
+.skill_info ul {
+overflow: hidden;
+}
+
+.skill_info ul li {
+width: 33.33%;
+float: left;
+height: auto;
+text-align: center;
+font-weight: normal;
+margin: 0;
+}
+
+.skill_info ul li img {
+width: 90%;
+display: block;
+margin: 0 auto;
+text-align: center;
+}
+
+.skill_info ul li b {
+display: block;
+font-size: 15px;
+font-weight: normal;
+height: 35px;
+line-height: 35px;
+}
+
+/*skill number jq css start*/
+.skill_info ul li .timer {
+color: #000;
+font-size: 80px;
+font-weight: normal;
+height: auto;
+margin: 13px 0 0 0;
+display: block;
+}
+
+.skill_info ul li:first-child .timer:after {
+content: "%";
+font-size: 55px;
+color: #000;
+font-weight: normal;
+margin-left: 1%;
+}
+
+.skill_info ul li:nth-child(2) .timer:after {
+content: "%";
+font-size: 55px;
+color: #000;
+font-weight: normal;
+margin-left: 1%;
+}
+
+.skill_info ul li:last-child .timer:after {
+content: "%";
+font-size: 55px;
+color: #000;
+font-weight: normal;
+margin-left: 1%;
+}
+
+.place_info {
+position: relative;
+width: 100%;
+margin: 0 0 3% 0;
+}
+
+.place_info ul {
+overflow: hidden;
+padding: 0 26%;
+}
+
+.place_info ul li {
+width: 50%;
+float: left;
+height: 40px;
+text-align: center;
+font-size: 18px;
+position: relative;
+line-height: 40px;
+cursor: pointer;
+}
+
+.place_info ul li:hover {
+color: #0068b7;
+}
+
+.place_info ul li.active {
+}
+
+.place_info ul .active::after {
+content: "";
+display: block;
+position: absolute;
+width: 45%;
+height: 3px;
+background: #0068b7;
+bottom: 0;
+left: 50%;
+margin-left: -22%;
+}
+
+/*skill number jq css end*/
+/*mobile design swiper css start */
+.sub_one {
+}
+
+.sub_one .skin_display {
+width: 100%;
+height: 34.3em;
+padding: 5.5% 0 0;
+margin: 0 0 8% 0;
+position: relative;
+}
+
+.sk_bg {
+position: absolute;
+top: 0;
+left: 50%;
+margin-left: -12.5%;
+width: 25%;
+height: 36em;
+z-index: 99;
+display: block;
+}
+
+.sk_bg img {
+width: 100%;
+}
+
+.sub_one .sub_title {
+position: relative;
+display: block;
+height: auto;
+margin: 4% 0 3% 0;
+font-weight: normal;
+color: #333;
+font-size: 13px;
+padding: 0;
+text-align: left;
+line-height: initial;
+}
+
+.sub_one .sub_title b {
+font-weight: normal;
+font-size: 13px;
+color: #000;
+}
+
+.sub_one .sub_title span {
+font-weight: normal;
+font-size: 15px;
+color: #fff;
+background: #0068b7;
+padding: 7px 10px;
+display: inline-block;
+width: auto;
+margin: 0;
+margin-right: 0.3%;
+}
+
+.sub_one .swiper-container {
+width: 100%;
+height: 100%;
+}
+
+.swiper-slide {
+/* Center slide text vertically */
+display: -webkit-box;
+display: -ms-flexbox;
+display: -webkit-flex;
+display: flex;
+-webkit-box-pack: center;
+-ms-flex-pack: center;
+-webkit-justify-content: center;
+justify-content: center;
+-webkit-box-align: center;
+-ms-flex-align: center;
+-webkit-align-items: center;
+align-items: center;
+}
+
+.sub_one .swiper-slide {
+text-align: center;
+font-size: 18px;
+background: transparent;
+height: auto;
+width: 18% !important;
+padding-bottom: 72px;
+}
+
+.sub_one .swiper-slide a {
+display: block;
+cursor: pointer;
+}
+
+.sub_one .swiper-slide a img {
+width: 99.5%;
+margin: 0 auto;
+z-index: 99;
+border: none;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets {
+bottom: 21px;
+display: none;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+margin: 0 0.25%;
+background: #fff;
+border-radius: 0;
+width: 10px;
+height: 2px;
+}
+
+.swiper-pagination-progress .swiper-pagination-progressbar {
+background: #fff;
+}
+
+/*mobile design swiper css end */
+/*pc design css start */
+.p_display {
+position: relative;
+clear: both;
+margin: 0 0 8% 0;
+}
+
+.p_display ul {
+overflow: hidden;
+width: 100%;
+font-size: 0;
+padding: 0;
+}
+
+.p_display ul li {
+width: 48%;
+float: left;
+text-align: center;
+margin: 0 1% 2% 1%;
+position: relative;
+}
+
+.p_display ul li a {
+width: auto;
+display: block;
+}
+
+.p_display ul li a img {
+width: 100%;
+border: 3px double #eee;
+}
+
+.p_display ul li .info {
+display: none;
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(255, 255, 255, 0.8);
+border: 1px solid #ddd;
+}
+
+.p_display ul li .info .title {
+color: #000;
+font-size: 22px;
+bottom: 20%;
+position: absolute;
+left: 5%;
+text-align: left;
+}
+
+.p_display ul li .info .title b {
+display: block;
+width: 22%;
+height: 2px;
+background: #000;
+margin-top: 5%;
+}
+
+.p_display ul li .info .sub {
+color: #000;
+font-size: 13px;
+bottom: 5%;
+position: absolute;
+left: 5%;
+text-align: left;
+line-height: 19px;
+padding: 0;
+}
+
+.p_display ul li .info .title .fake_button {
+display: inline-block;
+padding: 5px 11px;
+font-size: 12px;
+width: auto;
+border: 2px solid #0068b7;
+border-radius: 35px;
+vertical-align: middle;
+margin-left: 6px;
+color: #0068b7;
+font-weight: bold;
+}
+
+.p_display ul li .info .sub br {
+display: block;
+}
+
+/*pc design css end */
+/*footer css start(pc)*/
+#footer {
+background: #eee;
+height: auto;
+margin: 10% 0 0 0;
+clear: both;
+}
+
+#footer .foot_display {
+width: 1200px;
+margin: 0 auto;
+display: block;
+padding: 1% 1% 0 1%;
+}
+
+#footer .copy_name {
+font-size: 12px;
+font-weight: normal;
+color: #bbb;
+line-height: 16px;
+text-align: left;
+display: block;
+clear: both;
+padding: 5% 3% 2%;
+}
+
+#footer .copy_name p {
+display: block;
+font-size: 11px;
+color: #bbb;
+}
+
+#footer .sysy {
+display: block;
+overflow: hidden;
+clear: both;
+}
+
+#footer .sysy .left {
+width: 33.33%;
+height: auto;
+float: left;
+display: block;
+}
+
+#footer .sysy .left img {
+width: 300px;
+height: 300px;
+}
+
+#footer .sysy .center {
+width: 33.33%;
+float: left;
+font-family: 'Montserrat Alternates', sans-serif;
+font-weight: 500;
+font-size: 3.4em;
+margin: 32px 0 0 0;
+color: #000;
+}
+
+#footer .sysy .center b {
+font-family: initial;
+color: #0068b7;
+margin-left: 4px;
+}
+
+#footer .sysy .center span {
+display: block;
+width: 52px;
+height: 6px;
+background: #0068b7;
+margin: 27px 0 0 0;
+}
+
+#footer .sysy .center p {
+font-weight: 200;
+font-size: 23px;
+margin-top: 35px;
+color: #666;
+}
+
+#footer .sysy .right {
+width: 33.33%;
+float: left;
+margin: 32px 0 0 0;
+}
+
+#footer .sysy .right div {
+width: 100%;
+clear: both;
+margin: 0 0 41px 0px;
+}
+
+#footer .sysy .right div span {
+font-family: 'Montserrat Alternates', sans-serif;
+font-weight: 400;
+font-size: 24px;
+line-height: 28px;
+display: inline-block;
+text-align: left;
+float: left;
+width: 30%;
+}
+
+#footer .sysy .right div span b {
+font-family: initial;
+color: #0068b7;
+margin-left: 2px;
+}
+
+#footer .sysy .right div a {
+font-size: 14px;
+display: block;
+color: #353535;
+line-height: 22px;
+cursor: pointer;
+}
+
+/*footer css end(pc)*/
+/*publish_pc ver css start*/
+.pc_ph {
+position: relative;
+width: 100%;
+height: auto;
+background-image: url(/img/pu_pc_intro.png);
+background-repeat: no-repeat;
+background-size: 100% auto;
+background-position: center;
+display: block;
+}
+
+.pc_ph a {
+display: block;
+position: relative;
+}
+
+.pc_ph .gif_image {
+width: 291px;
+height: auto;
+display: block;
+margin: 0 auto;
+position: absolute;
+left: 50%;
+margin-left: -143px;
+top: 15.6%;
+z-index: 9;
+}
+
+.pc_ph .floating_image {
+position: relative;
+z-index: 10;
+}
+
+.pc_ph img {
+width: 100%;
+}
+
+.mobile_ph {
+display: none !important;
+}
+
+.foot_list {
+clear: both;
+}
+
+.foot_list ul {
+font-size: 0px;
+padding: 1% 10%;
+overflow: hidden;
+text-align: center;
+width: 100%;
+}
+
+.foot_list ul li {
+width: 25%;
+height: 40px;
+line-height: 38px;
+float: left;
+text-align: center;
+margin: 0;
+position: relative;
+}
+
+.foot_list ul li span {
+position: absolute;
+right: 0;
+top: 12px;
+width: 1px;
+height: 12px;
+background: #b8b8b8;
+}
+
+.foot_list ul li:nth-child(2) span{
+display:block;        
+}
+
+.foot_list ul li a {
+font-size: 12px;
+display: block;
+color: #575757;
+}
+
+.self_work .self_title {
+text-align: center;
+}
+
+/*publish_pc ver css end*/
+}
+
+/*============================== pc resize end 17.04.21 ==============================*/
+.animated {
+-webkit-animation-duration: 2s;
+animation-duration: 2s;
+-webkit-animation-fill-mode: both;
+animation-fill-mode: both;
+}
+
+@keyframes slideInUp {
+from {
+transform: translate3d(0, 100%, 0);
+visibility: visible;
+}
+
+to {
+transform: translate3d(0, 0, 0);
+}
+}
+
+.slideInUp {
+animation-name: slideInUp;
+}
+
+.amamam {
+width: 500px;
+height: 500px;
+background: green;
+}

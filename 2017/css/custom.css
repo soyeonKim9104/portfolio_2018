@@ -1473,12 +1473,13 @@ padding-bottom: 72px;
 .sub_one .swiper-slide a {
 display: block;
 cursor: pointer;
+z-index: 999;
 }
 
 .sub_one .swiper-slide a img {
 width: 99.5%;
 margin: 0 auto;
-z-index: 99;
+z-index: 999;
 border: none;
 }
 
